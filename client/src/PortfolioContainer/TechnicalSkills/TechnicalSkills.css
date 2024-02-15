@@ -1,0 +1,175 @@
+.technical-skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  
+}
+.technical-skill-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+.technical-skill-item{
+    display: flex;
+    flex: 15%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(https://i.makeagif.com/media/8-29-2017/BoktV9.gif);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin : 20px 20px 20px 20px;
+    opacity: .9;
+    
+}
+.technical-skill-item .icon{
+    position: absolute;
+    background-image: url(https://img.freepik.com/premium-vector/coding-line-vector-icon-with-code-screen_116137-2643.jpg);
+    background-size:cover;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+.icon-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50px;
+} 
+.technical-skill-item:hover{
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+
+}
+.technical-skill-item h2{
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    color:bisque;
+    justify-content: center;
+} 
+.technical-skill-item p{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    color: var(--white);
+}
+
+/*TEmp CSS*/
+.tech-stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 10px 30px 10px;
+
+    
+}
+.tech-stack h2{
+    color: rgb(150, 150, 150);
+    font-size: 30px;
+    font-family: 'Montserrat',sans-serif;
+}
+.tech-stack-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech-stack-box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+}
+.tech-stack-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    flex: 1; /* This will allow the boxes to grow and take up equal space */
+    min-width: 100px; /* Set minimum width to ensure boxes don't get too small */
+    height: 100px; /* Set a fixed height for square shape */
+    margin: 20px;
+}
+.tech-stack-top img{
+    width: 50px;
+    height: 50px;
+}
+.tech-stack-bottom{
+    padding : 5px;
+}
+.tech-stack-bottom h3{ 
+    color: rgb(222, 221, 221);
+    font-size: 15px;
+    font-weight: 2000;
+    font-family: 'Montserrat',sans-serif;
+}
+ 
+
+@media only screen and (max-width: 1100px) {
+    .technical-skill-container{
+        overflow: hidden;
+    }
+    
+    .technical-skill-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        border-radius: 10%;
+        border-color: d;
+    }
+    .technical-skill-item {
+        display: flex; /* Adjust so two items fit per row with margin */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        min-height: 300px;
+        padding: 20px 20px 20px 20px;
+        position: relative;
+        background-image: cover;
+        
+    
+    }
+
+    .technical-skill-item .icon {
+        height: 50px; /* Adjust icon size for smaller screens */
+        width: 50px;
+    }
+    .icon-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 50px;
+    } 
+    .technical-skill-item h2 {
+        font-size: 30px; /* Adjust based on preference */
+    }
+
+    .technical-skill-item p {
+        font-size: 20px; /* Adjust based on preference */
+    }
+}

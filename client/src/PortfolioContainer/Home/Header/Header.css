@@ -1,0 +1,130 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    opacity: 0.8;
+
+}
+.header-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin-top: 2px;
+    color: var(--white);
+
+}
+.header-logo{
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--white);
+}
+.header-options{
+    display: flex;
+    align-items: center;
+}
+.header-option{
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.header-hamburger{
+    display: none;
+    color: var(--white);
+}
+.header-option-seperator{
+    margin: 0 50px 0 0px;
+    color: var(--white);
+}
+
+.selected-header-option{
+    color: rgb(156, 0, 0);
+}
+/*IPAD & Mobile Resposnsiveness*/
+  @media only screen and (max-width: 1200px) {
+    .header-container{
+      opacity: 0.9;
+    }
+    .header-hamburger {
+      display: block;
+    }
+    .header-parent {
+      width: 100%;
+      padding: 0 20px;
+      
+    }
+    .header-options {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: -100%;
+      transition: all 0.8s ease-out;
+      top: 0px;
+      height: 100vh;
+      width: 100%;
+      justify-content: space-evenly;
+      background-color: #1f2235;
+      z-index: 1000;
+      opacity: 0.9;
+    }
+    .header-options .back-to-main{
+      height: 60px;
+    width: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+  }
+.back-to-main  .bar {
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    top: 25px;
+    left: 12px;
+    animation: hamburger_plus 1s  ease infinite;
+}
+@keyframes hamburger_plus {
+  0%, 100% {
+      opacity: 1; 
+  }
+  50% {
+      opacity: 0; 
+  }
+}
+    .header-option{
+      font-size: 30px;
+  
+  }
+    .header-option-seperator {
+      margin: 0;
+    }
+    .selected-header-option {
+      color: var(--white);
+    }
+    .header-hamburger-bars {
+      font-size: 36px;
+      cursor: pointer;
+      margin: 0px 10px;
+      color: var(--white);
+    }
+    .show-hamburger-options {
+      left: 0;
+      opacity: 1;
+    }
+  
+  }
+  

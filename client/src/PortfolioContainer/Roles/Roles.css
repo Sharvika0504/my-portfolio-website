@@ -1,0 +1,48 @@
+.roles-parent{
+    display: flex;
+    flex-direction: row;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    animation: slideLeft 25s linear infinite;
+  }
+  .slider-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width:fit-content;
+    z-index: -1;
+    position: relative;
+  }
+  .role-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px; /* Adjust based on your preference */
+    margin-right: 20px; /* Space between boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for better visibility */
+    padding: 20px;
+    background-color: #f3f3f3; /* Light grey background */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .role-box img{
+    width:50px;
+    height: 50px;
+  }
+  /* Keyframes for sliding effect */
+  @keyframes slideLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      50% {
+        opacity: 1;
+      }
+    100% {
+        opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  

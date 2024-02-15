@@ -1,0 +1,119 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  height: 100vh;
+  opacity: 1;
+ 
+
+}
+.about-me-parent {
+  max-width: 1300px;
+  width: 90%;
+  height: 100%;
+  
+}
+.about-me-card {
+  display: flex;
+  height: 600px;
+  width: fit-content;
+  box-shadow: 0 0px 20px -2px #3d2020a7;
+  background-color: rgb(250, 245, 241);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-me-profile {
+  width: 40%;
+  background-image: url("../../assets/AboutMe/Me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-me-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: justify;
+  padding: 20px;
+}
+.about-me-description {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: rgba(0, 0, 0, 0.888);
+}
+.about-me-highlights {
+  margin: 80px 0;
+}
+.highlght-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.about-me-options{
+  display:flex;
+  justify-content: center;
+  padding: 20px;
+}
+.about-me-options .highlighted-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f75524;
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .about-me-container{
+    overflow: hidden;
+  }
+  .about-me-parent {
+    width: 90%;
+    overflow-y: auto;
+   
+  }
+  .about-me-card{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+    
+  }
+  .about-me-profile{
+    display: flex;
+    position: relative;
+    width: 40%; /* Ensure it occupies the full width */
+    height: 40%; /* Adjust based on your preference */
+    min-height: 300px; /* Example minimum height, adjust as necessary */
+    min-width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    margin: 10px auto;
+    z-index: 1;
+  }
+  .about-me-details {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+  }
+  .about-me-description{
+    height: auto;
+  }
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+}
