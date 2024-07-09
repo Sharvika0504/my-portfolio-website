@@ -1,4 +1,4 @@
-import StarIcon from '@mui/icons-material/Star';
+
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -91,7 +91,7 @@ export default function ResumeTemp(props) {
           ))}
           <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            icon={<StarIcon />}
+            
           />
         </VerticalTimeline>
       </div>
