@@ -1,0 +1,89 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background for better visibility */
+    width: 100%;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for debugging */
+    background-color: #fff; /* White background for items */
+    width: 80%; /* Adjust the width of the timeline item */
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #ddd;
+  }
+  
+  .timeline-date {
+    background: #c68c60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .experienceTemp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .expereince-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experienceTemp-heading {
+    margin: 5px 0;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade {
+    opacity: 0;
+  }
+  

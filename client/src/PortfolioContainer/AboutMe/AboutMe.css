@@ -25,7 +25,7 @@
 }
 .about-me-profile {
   width: 40%;
-  background-image: url("../../assets/AboutMe/Me.jpg");
+  background-image: url("../../assets/AboutMe/Graduation_pic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@
   padding: 20px;
 }
 .about-me-description {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   font-family: 'Lato', sans-serif;
   color: rgba(0, 0, 0, 0.888);
