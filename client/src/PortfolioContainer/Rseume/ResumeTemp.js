@@ -38,7 +38,7 @@ export default function ResumeTemp(props) {
       icon: TCS,
     },
     {
-      date: 'Jun 2019 - Dec 2020',
+      date: 'Jun 2019 - Apr 2021',
       company: "Amdocs DVCI",
       role: "Software Engineer",
       location: "Pune, India",
